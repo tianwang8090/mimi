@@ -1,33 +1,37 @@
 {
   "pages": [
-    "pages/index/index",
-    "pages/logs/logs"
+    "pages/home/home",
+    "pages/message/message",
+    "pages/note/note",
+    "pages/mine/mine"
   ],
   "window": {
     "backgroundTextStyle": "dark",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "black"
+    "navigationBarBackgroundColor": "#333",
+    "navigationBarTitleText": "MiMi",
+    "navigationBarTextStyle": "light"
   },
   "tabBar": {
+    "color": "#999",
+    "selectedColor": "#fff",
     "backgroundColor": "#333",
     "list": [{
-      "pagePath": "pages/index/index",
+      "pagePath": "pages/home/home",
       "text": "首页",
       "iconPath": "./assets/imgs/home.png",
       "selectedIconPath": "./assets/imgs/home_fill.png"
     }, {
-      "pagePath": "pages/logs/logs",
+      "pagePath": "pages/message/message",
       "text": "消息",
       "iconPath": "./assets/imgs/mail.png",
       "selectedIconPath": "./assets/imgs/mail_fill.png"
     }, {
-      "pagePath": "pages/logs/logs",
+      "pagePath": "pages/note/note",
       "text": "日志",
       "iconPath": "./assets/imgs/write.png",
       "selectedIconPath": "./assets/imgs/write_fill.png"
     }, {
-      "pagePath": "pages/logs/logs",
+      "pagePath": "pages/mine/mine",
       "text": "我的",
       "iconPath": "./assets/imgs/people.png",
       "selectedIconPath": "./assets/imgs/people_fill.png"

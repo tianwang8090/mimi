@@ -1,0 +1,24 @@
+<!--index.wxml-->
+<!-- <view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view> -->
+<import src="../../components/content-box.wxml"/>
+<view>
+  <view class="content-list-box">
+    <view wx:for="{{contentList}}" wx:key="{{item.content_id}}" class="content-wrapper">
+      <template is="content_model" data="{{index,...item}}"></template>
+    </view>
+  </view>
+  <view class="footer-box">
+    ~~ 不要再扯啦 ~~
+  </view>
+</view>

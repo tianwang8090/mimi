@@ -1,0 +1,89 @@
+.content-list-box {
+  padding: 10px;
+  padding-bottom: 0;
+  box-sizing: border-box;
+}
+
+.content-wrapper {
+  margin-bottom: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  background: #fafafa;
+  box-shadow: 0 0 2px #aaaaaa;
+}
+
+.content-title-box {
+  margin-bottom: 10px;
+}
+
+.avator {
+  vertical-align: middle;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background: #333;
+}
+
+.nick {
+  display: inline-block;
+  margin-left: 5px;
+  box-sizing: border-box;
+  max-width: 160px;
+  overflow: hidden;
+  white-space: nowrap;
+  vertical-align: middle;
+  font-size: 12px;
+  color: #666;
+  text-overflow: ellipsis;
+}
+
+.time {
+  margin-left: 20px;
+  box-sizing: border-box;
+  vertical-align: middle;
+  font-size: 12px;
+  color: #999;
+}
+
+.content-img {
+  width: 100%;
+}
+
+.content-txt {
+  margin-bottom: 10px;
+  color: #333;
+  font-size: 13px;
+  line-height: 24px;
+  text-align: justify;
+}
+
+.content-info-box {
+  height: 40px;
+  font-size: 13px;
+}
+
+.content-info-item-box {
+  display: inline-block;
+  padding: 0 10px;
+  box-sizing: border-box;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+.content-info-item-box .iconfont{
+  margin-right: 5px;
+}
+.more-box {
+  float: right;
+}
+.more-box .iconfont {
+  margin: 0;
+}
+
+.footer-box {
+  height: 40px;
+  line-height: 40px;
+  color: #999;
+  font-size: 12px;
+  text-align: center;
+}
