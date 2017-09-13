@@ -10,10 +10,8 @@ Page({
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
     contentList: [{
       content_id: 122,
-      author_info: {
-        avator_url: "../../assets/imgs/avator1.jpeg",
-        nick: "一缕破伤风"
-      },
+      author_avator_url: "../../assets/imgs/avator1.jpeg",
+      author_nick: "一缕破伤风",
       time: "1小时前",
       content_img: "../../assets/imgs/pic1.jpeg",
       content_txt: "如果你无法简洁的表达你的想法，那只说明你还不够了解他。如果你无法简洁的表达你的想法，那只说明你还不够了解他。如果你无法简洁的表达你的想法，那只说明你还不够了解他。如果你无法简洁的表达你的想法，那只说明你还不够了解他。如果你无法简洁的表达你的想法，那只说明你还不够了解他。如果你无法简洁的表达你的想法，那只说明你还不够了解他。如果你无法简洁的表达你的想法，那只说明你还不够了解他。",
@@ -22,10 +20,8 @@ Page({
       comment_count: 77
     }, {
       content_id: 123,
-      author_info: {
-        avator_url: "../../assets/imgs/avator2.jpeg",
-        nick: "一缕破伤风"
-      },
+      author_avator_url: "../../assets/imgs/avator1.jpeg",
+      author_nick: "一缕破伤风",
       time: "1小时前",
       content_img: "../../assets/imgs/pic2.jpeg",
       content_txt: "如果你无法简洁的表达你的想法，那只说明你还不够了解他。如果你无法简洁的表达你的想法，那只说明你还不够了解他。如果你无法简洁的表达你的想法，那只说明你还不够了解他。如果你无法简洁的表达你的想法，那只说明你还不够了解他。如果你无法简洁的表达你的想法，那只说明你还不够了解他。如果你无法简洁的表达你的想法，那只说明你还不够了解他。如果你无法简洁的表达你的想法，那只说明你还不够了解他。",
@@ -72,15 +68,21 @@ Page({
   },
   //事件处理函数
   likeHandle(e) {
-    let _data = e.currentTarget.dataset;
+    let dataset = e.currentTarget.dataset;
     let params = {},
-      t = `contentList[${_data.index}].like`;
-    params[t] = !_data.like;
+      t = `contentList[${dataset.index}].like`;
+    params[t] = !dataset.like;
     this.setData(params);
   },
-  commentHandle() {},
+  commentHandle(e) {
+    let dataset = e.currentTarget.dataset,
+      _data = this.data.contentList;
+    wx.navigateTo({
+      url: `../content/content?content_id=${_data[dataset.index].content_id}&from=home`
+    })
+  },
   moreHandle(e) {
     console.log(e)
     common.report(e.target.dataset);
-  },
+  }
 })

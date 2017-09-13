@@ -1,0 +1,19 @@
+<import src="../../components/content-box.wxml"></import>
+<import src="../../components/comment-box.wxml"></import>
+
+<view>
+  <view class="content-wrapper">
+    <template is="content_model" data="{{...content_info}}"></template>
+  </view>
+  <view>
+    <view class="content-tab"></view>
+    <view class="comment-list-box">
+        <view class="comment-wrapper" wx:for="{{comment_list}}" wx:key="{{item.comment_id}}">
+            <template is="comment_model" data="{{index,...item}}"></template>
+          </view>
+    </view>
+  </view>
+  <view class="footer-box">
+    ~~ 不要再扯啦 ~~
+  </view>
+</view>

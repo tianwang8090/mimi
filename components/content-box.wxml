@@ -1,22 +1,29 @@
 <template name="content_model">
+
   <view class="content-title-box">
-    <image class="avator" mode="center" src="{{author_info.avator_url}}" alt="" />
-    <text class="nick">{{author_info.nick}}</text>
+    <image class="avator" src="{{author_avator_url}}" alt="" />
+    <text class="nick">{{author_nick}}</text>
     <text class="time">{{time}}</text>
   </view>
+
   <view class="content-img-box">
     <image class="content-img" mode="center" src="{{content_img}}" alt="" />
   </view>
+
   <view class="content-txt">{{content_txt}}</view>
+
   <view class="content-info-box">
     <view class="content-info-item-box like-box" data-index="{{index}}" data-like="{{like}}" bind:tap="likeHandle">
-      <i class="iconfont {{like ? 'icon-likefill' : 'icon-like'}}"></i><span class="like-count">{{like_count}}</span>
+      <i class="iconfont {{like ? 'icon-likefill' : 'icon-like'}}"></i>
+      <span class="like-count">{{like_count}}</span>
     </view>
-    <view class="content-info-item-box comment-box" bind:tap="commentHandle">
-      <i class="iconfont icon-comment"></i><span class="coment-count">{{comment_count}}</span>
+    <view class="content-info-item-box comment-box" data-index="{{index}}" bind:tap="commentHandle">
+      <i class="iconfont icon-comment"></i>
+      <span class="coment-count">{{comment_count}}</span>
     </view>
     <view class="content-info-item-box more-box" bind:tap="moreHandle">
       <i class="iconfont icon-more"></i>
     </view>
   </view>
+
 </template>

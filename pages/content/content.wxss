@@ -1,0 +1,134 @@
+/* content start */
+.content-wrapper {
+  margin-bottom: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  background: #fafafa;
+  box-shadow: 0 0 2px #aaaaaa;
+}
+
+.content-title-box {
+  margin-bottom: 10px;
+}
+
+.avator {
+  vertical-align: middle;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background: #333;
+}
+
+.nick {
+  display: inline-block;
+  margin-left: 5px;
+  box-sizing: border-box;
+  max-width: 160px;
+  overflow: hidden;
+  white-space: nowrap;
+  vertical-align: middle;
+  font-size: 12px;
+  color: #666;
+  text-overflow: ellipsis;
+}
+
+.time {
+  margin-left: 20px;
+  box-sizing: border-box;
+  vertical-align: middle;
+  font-size: 12px;
+  color: #999;
+}
+
+.content-img {
+  width: 100%;
+}
+
+.content-txt {
+  margin-bottom: 10px;
+  color: #333;
+  font-size: 13px;
+  line-height: 24px;
+  text-align: justify;
+}
+
+.content-info-box {
+  height: 40px;
+  font-size: 13px;
+}
+
+.content-info-item-box {
+  display: inline-block;
+  padding: 0 10px;
+  box-sizing: border-box;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.content-info-item-box.more-box {
+  float: right;
+}
+
+.content-info-item-box .iconfont {
+  margin-right: 5px;
+}
+
+.more-box .iconfont {
+  margin: 0;
+}
+
+/* content end */
+
+/* comment start */
+
+.comment-title-box .commented-nick-right{
+  font-size:10px;
+  vertical-align:middle;
+  color:#999;
+  margin-left:5px;
+  
+}
+
+.comment-list-box {
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.comment-wrapper {
+  padding: 10px;
+  box-sizing: border-box;
+  color: #333;
+  font-size: 12px;
+  background: #fafafa;
+  border-bottom: 1px solid #eee;
+}
+
+.comment-txt {
+  line-height: 17px;
+  text-align: justify;
+}
+
+.comment-info-box {
+  text-align: right;
+}
+
+.comment-info-item-box {
+  display: inline-block;
+  padding: 0 10px;
+  box-sizing: border-box;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+}
+
+
+/* comment end */
+
+.footer-box {
+  height: 40px;
+  line-height: 40px;
+  color: #999;
+  font-size: 12px;
+  text-align: center;
+}
