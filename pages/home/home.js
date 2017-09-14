@@ -69,9 +69,11 @@ Page({
   //事件处理函数
   likeHandle(e) {
     let dataset = e.currentTarget.dataset;
-    let params = {},
-      t = `contentList[${dataset.index}].like`;
-    params[t] = !dataset.like;
+    let params = {};
+      let s1 = `contentList[${dataset.index}].like`;
+      let s2 = `contentList[${dataset.index}].like_count`;
+    params[s1] = !dataset.like;
+    params[s2] = dataset.like ? --this.data.contentList[dataset.index].like_count : ++this.data.contentList[dataset.index].like_count;
     this.setData(params);
   },
   commentHandle(e) {

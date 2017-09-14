@@ -6,11 +6,21 @@
     <template is="content_model" data="{{...content_info}}"></template>
   </view>
   <view>
-    <view class="content-tab"></view>
-    <view class="comment-list-box">
-        <view class="comment-wrapper" wx:for="{{comment_list}}" wx:key="{{item.comment_id}}">
-            <template is="comment_model" data="{{index,...item}}"></template>
-          </view>
+    <view class="tab-box">
+      <text class="tab {{activeTab === 'comment' ? 'active' : ''}}" bind:tap="tabHandle" data-name="comment">评论</text>
+      <text class="tab {{activeTab === 'like' ? 'active' : ''}}" bind:tap="tabHandle" data-name="like">赞</text>
+    </view>
+    <view class="panel-box">
+        <block wx:if="{{activeTab === 'comment'}}">
+            <view class="comment-list-box">
+                <view class="comment-wrapper" wx:for="{{comment_list}}" wx:key="{{item.comment_id}}">
+                    <template is="comment_model" data="{{index,...item}}"></template>
+                  </view>
+            </view>
+        </block>
+        <block wx:else>
+          <view>lalala</view>
+        </block>
     </view>
   </view>
   <view class="footer-box">
