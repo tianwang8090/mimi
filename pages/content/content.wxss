@@ -146,6 +146,18 @@
 
 /* comment end */
 
+/* like start */
+
+.like-list-box {
+  padding: 0 10px;
+  background: #fafafa;
+}
+.like-list-box .like-wrapper {
+  padding: 5px 0;
+  border-bottom: 1px solid #eee;
+}
+/* like end */
+
 .footer-box {
   height: 40px;
   line-height: 40px;

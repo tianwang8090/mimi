@@ -1,5 +1,6 @@
 <import src="../../components/content-box.wxml"></import>
 <import src="../../components/comment-box.wxml"></import>
+<import src="../../components/like-box.wxml"></import>
 
 <view>
   <view class="content-wrapper">
@@ -19,7 +20,11 @@
             </view>
         </block>
         <block wx:else>
-          <view>lalala</view>
+          <view class="like-list-box">
+            <view class="like-wrapper" wx:for="{{like_list}}" wx:key="{{item.user_id}}">
+              <template is="like_model" data="{{...item}}"></template>
+            </view>
+          </view>
         </block>
     </view>
   </view>

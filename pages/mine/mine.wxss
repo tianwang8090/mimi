@@ -1,1 +1,49 @@
-/**index.wxss**/
+@import '../../assets/we-ui/dist/style/weui.wxss';
+
+.input-wrapper {
+  position: absolute;
+  z-index: 9;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .7);
+}
+
+.input-box {
+  padding: 10px 10px;
+  background-color: #444;
+}
+
+.input {
+  padding: 2px 10px;
+  height: 30px;
+  color: #333;
+  font-size: 14px;
+  background-color: #eee;
+  border-radius: 5px;
+}
+
+.input-placeholder {
+  color: #aaa;
+}
+
+.use-avator {
+  margin: 25px auto;
+  display:block;
+  width: 120px;
+  height: 120px;
+  border: 2px solid #333;
+  border-radius: 50%;
+  box-shadow: 0 0 2px #aaa;
+}
+
+.list-box {
+  margin-bottom: 10px;
+}
+.list-item {
+  line-height: 30px;
+  font-size: 14px;
+}

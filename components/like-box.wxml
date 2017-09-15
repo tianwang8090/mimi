@@ -1,0 +1,9 @@
+<template name="like_model">
+
+  <view class="like-title-box">
+    <image class="avator" src="{{user_avator_url}}" alt="" />
+    <text class="nick">{{user_nick}}</text>
+    <text class="time">{{like_time}}</text>
+  </view>
+
+</template>

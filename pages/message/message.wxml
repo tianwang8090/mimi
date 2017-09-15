@@ -1,17 +1,9 @@
-<!--index.wxml-->
-<!-- <view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
-</view> -->
+<import src="../../components/message-box.wxml"/>
+
 <view>
-  <view class="text-center">hey, welcome to mimi</view>
-  <i class="iconfont icon-home"></i>
+  <view class="message-list-box">
+    <view class="message-wrapper" wx:for="{{message_list}}" wx:key="{{item.msg_id}}">
+      <template is="{{item.msg_type === 'comment' ? 'comment_message_model' : 'like_message_model'}}" data="{{...item}}"></template>
+    </view>
+  </view>
 </view>

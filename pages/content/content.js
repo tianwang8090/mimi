@@ -9,6 +9,7 @@ Page({
       content_id: 122,
       author_avator_url: "../../assets/imgs/avator1.jpeg",
       author_nick: "一缕破伤风",
+      author_id: "22",
       time: "1小时前",
       content_img: "../../assets/imgs/pic1.jpeg",
       content_txt: "如果你无法简洁的表达你的想法，那只说明你还不够了解他。如果你无法简洁的表达你的想法，那只说明你还不够了解他。如果你无法简洁的表达你的想法，那只说明你还不够了解他。如果你无法简洁的表达你的想法，那只说明你还不够了解他。如果你无法简洁的表达你的想法，那只说明你还不够了解他。如果你无法简洁的表达你的想法，那只说明你还不够了解他。如果你无法简洁的表达你的想法，那只说明你还不够了解他。",
@@ -20,6 +21,7 @@ Page({
       comment_id: 122,
       author_avator_url: "../../assets/imgs/avator1.jpeg",
       author_nick: "一缕破伤风",
+      author_id: "23",
       commented_nick: "",
       time: "1小时前",
       comment_txt: "如果你无法简洁的表达你的想法，那只说明你还不够了解他。"
@@ -27,6 +29,7 @@ Page({
       comment_id: 122,
       author_avator_url: "../../assets/imgs/avator1.jpeg",
       author_nick: "一缕破伤风",
+      author_id: "24",
       commented_nick: "someBody",
       time: "1小时前",
       comment_txt: "如果你无法简洁的表达你的想法，那只说明你还不够了解他。"
@@ -34,10 +37,31 @@ Page({
       comment_id: 122,
       author_avator_url: "../../assets/imgs/avator1.jpeg",
       author_nick: "一缕破伤风",
+      author_id: "25",
       commented_nick: "",
       time: "1小时前",
       comment_txt: "如果你无法简洁的表达你的想法，那只说明你还不够了解他。"
-    }]
+    }],
+    like_list: [
+      {
+        user_id: 1,
+        user_avator_url: "../../assets/imgs/avator1.jpeg",
+        user_nick: "末日小丑",
+        like_time: "5分钟前"
+      },
+      {
+        user_id: 2,
+        user_avator_url: "../../assets/imgs/avator2.jpeg",
+        user_nick: "末日小丑",
+        like_time: "5分钟前"
+      },
+      {
+        user_id: 3,
+        user_avator_url: "../../assets/imgs/avator1.jpeg",
+        user_nick: "末日小丑",
+        like_time: "5分钟前"
+      }
+    ]
   },
   onLoad: function (options) {
     //Do some initialize when page load.
