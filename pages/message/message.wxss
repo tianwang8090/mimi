@@ -1,52 +1,52 @@
 .avator {
   vertical-align: middle;
   border-radius: 50%;
-  width: 30px;
-  height: 30px;
+  width: 60rpx;
+  height: 60rpx;
   background: #333;
 }
 
 .nick {
   display: inline-block;
-  margin-left: 5px;
+  margin-left: 10rpx;
   box-sizing: border-box;
-  max-width: 90px;
+  max-width: 180rpx;
   overflow: hidden;
   white-space: nowrap;
   vertical-align: middle;
-  font-size: 12px;
+  font-size: 24rpx;
   color: #666;
   text-overflow: ellipsis;
 }
 
 .time {
-  margin-left: 20px;
+  margin-left: 40rpx;
   box-sizing: border-box;
   vertical-align: middle;
-  font-size: 12px;
+  font-size: 24rpx;
   color: #999;
 }
 
 .message-list-box {
-  padding: 0 10px;
+  padding: 0 20rpx;
   background: #fafafa;
 }
 
 .message-wrapper {
-  padding: 10px;
+  padding: 20rpx;
   box-sizing: border-box;
-  height: 90px;
+  height: 180rpx;
   color: #333;
-  font-size: 12px;
+  font-size: 24rpx;
   background: #fafafa;
-  border-bottom: 1px solid #eee;
+  border-bottom: 2rpx solid #eee;
 }
 
 .message-wrapper .msg-type-txt {
-  margin-left: 20px;
+  margin-left: 40rpx;
   box-sizing: border-box;
   vertical-align: middle;
-  font-size: 12px;
+  font-size: 24rpx;
   color: #999;
 }
 
@@ -54,11 +54,11 @@
 /* comment start */
 
 .comment-txt {
-  margin-left: 35px;
-  font-size: 14px;
-  line-height: 17px;
+  margin-left: 70rpx;
+  font-size: 24rpx;
+  line-height: 34rpx;
   text-align: justify;
-  width: 200px;
+  width: 400rpx;
   /* 多行文字溢出 */
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -79,7 +79,7 @@
 
 .message-wrapper .content-review-pic {
   float: right;
-  width: 70px;
-  height: 70px;
-  box-shadow: 0 0 2px #aaaaaa;
+  width: 140rpx;
+  height: 140rpx;
+  box-shadow: 0 0 4rpx #aaaaaa;
 }

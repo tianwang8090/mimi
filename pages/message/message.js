@@ -3,8 +3,7 @@ const app = getApp()
 
 Page({
   data: {
-    message_list: [
-      {
+    message_list: [{
         msg_type: "comment",
         msg_id: 11,
         author_avator_url: "../../assets/imgs/avator1.jpeg",
@@ -50,28 +49,34 @@ Page({
       }
     ]
   },
-  onLoad: function(options) {
+  onLoad: function (options) {
     //Do some initialize when page load.
-    
+
   },
-  onReady: function() {
+  onReady: function () {
     //Do some when page ready.
-    
+
   },
-  onShow: function() {
+  onShow: function () {
     //Do some when page show.
-    
+
   },
-  onHide: function() {
+  onHide: function () {
     //Do some when page hide.
-    
+
   },
-  onUnload: function() {
+  onUnload: function () {
     //Do some when page unload.
-    
+
   },
-  onPullDownRefresh: function() {
+  onPullDownRefresh: function () {
     //Do some when page pull down.
-    
+
+  },
+  messageTabHandle(e) {
+    let data = e.currentTarget.dataset;
+    wx.navigateTo({
+      url: `../content/content?content_id=${data.id}&from=message`
+    })
   }
 })

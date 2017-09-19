@@ -1,33 +1,35 @@
 <!-- 评论消息 -->
 <template name="comment_message_model">
+  <view bind:tap="messageTabHandle" data-type="comment" data-id="{{content_id}}">
+    <image class="content-review-pic" src="{{content_review_pic_url}}"></image>
 
-  <image class="content-review-pic" src="{{content_review_pic_url}}"></image>
+    <view class="comment-title-box">
+      <image class="avator" src="{{author_avator_url}}" alt="" />
+      <text class="nick">{{author_nick}}</text>
+      <text class="time">{{time}}</text>
+      <text class="msg-type-txt">评论了你：</text>
+    </view>
 
-  <view class="comment-title-box">
-    <image class="avator" src="{{author_avator_url}}" alt="" />
-    <text class="nick">{{author_nick}}</text>
-    <text class="time">{{time}}</text>
-    <text class="msg-type-txt">评论了你：</text>
+    <view class="comment-txt">{{comment_txt}}</view>
   </view>
-
-  <view class="comment-txt">{{comment_txt}}</view>
 
 </template>
 
 <!-- 点赞消息 -->
 <template name="like_message_model">
+  <view bind:tap="messageTabHandle" data-type="like" data-id="{{content_id}}">
+    <image class="content-review-pic" src="{{content_review_pic_url}}"></image>
 
-  <image class="content-review-pic" src="{{content_review_pic_url}}"></image>
+    <view class="like-title-box">
+      <image class="avator" src="{{author_avator_url}}" alt="" />
+      <text class="nick">{{author_nick}}</text>
+      <text class="time">{{time}}</text>
+      <text class="msg-type-txt">赞了你：</text>
+    </view>
 
-  <view class="like-title-box">
-    <image class="avator" src="{{author_avator_url}}" alt="" />
-    <text class="nick">{{author_nick}}</text>
-    <text class="time">{{time}}</text>
-    <text class="msg-type-txt">赞了你：</text>
-  </view>
-
-  <view class="comment-txt">
-    <i class="iconfont icon-like"></i>
+    <view class="comment-txt">
+      <i class="iconfont icon-like"></i>
+    </view>
   </view>
 
 </template>

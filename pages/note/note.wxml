@@ -1,17 +1,33 @@
-<!--index.wxml-->
-<!-- <view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
+<view class="container">
+
+  <view class="pen-wrapper">
+    <view class='pen-box'>
+      <i class="iconfont icon-writefill"></i>
+    </view>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+
+  <view class='note-wrapper'>
+    <view class='note-box'>
+      <view class='note-item'>
+        <template is="note_model"></template>
+      </view>
+    </view>
   </view>
-</view> -->
-<view>
-  <view class="text-center">hey, welcome to mimi</view>
-  <i class="iconfont icon-home"></i>
+
 </view>
+
+<!-- 记录 -->
+<template name="note_model">
+  <view bind:tap="noteTapHandle">
+    <image class="content-review-pic" src="../../assets/imgs/pic1.jpeg"></image>
+
+    <view class="note-title-box">
+      <view class="date-d">07</view>
+      <text class="date">2017.07</text>
+      <text class="weather">晴</text>
+    </view>
+
+    <view class="note-review-txt">如果你无法简洁的表达你的想法，那只说明你还不够了解他。如果你无法简洁的表达你的想法，那只说明你还不够了解他。如果你无法简洁的表达你的想法，那只说明你还不够了解他。</view>
+  </view>
+
+</template>

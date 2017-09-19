@@ -1,1 +1,93 @@
-/**index.wxss**/
+.container {
+  background-color: #3f51b5;
+  min-height: 100%;
+}
+
+.pen-wrapper {
+  padding: 60rpx 0;
+}
+
+.pen-box {
+  margin: 0 auto;
+  background: #111;
+  width: 120rpx;
+  height: 120rpx;
+  line-height: 120rpx;
+  text-align: center;
+  border-radius: 50%;
+  box-shadow: 0 0 8rpx #000;
+}
+
+.pen-box i.iconfont {
+  color: #fff;
+  font-size: 60rpx;
+  text-shadow: 0 0 40rpx #fff;
+}
+
+.date-d {
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 50%;
+  width: 60rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  background: #333;
+  color: #fff;
+  font-size: 36rpx;
+  text-align: center;
+}
+
+.date {
+  display: inline-block;
+  margin-left: 10rpx;
+  box-sizing: border-box;
+  max-width: 180rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  vertical-align: middle;
+  font-size: 24rpx;
+  color: #666;
+  text-overflow: ellipsis;
+}
+
+.weather {
+  margin-left: 40rpx;
+  box-sizing: border-box;
+  vertical-align: middle;
+  font-size: 24rpx;
+  color: #999;
+}
+
+.note-wrapper {
+  padding: 0 20rpx;
+}
+
+.note-box {
+  padding: 20rpx;
+  box-sizing: border-box;
+  height: 180rpx;
+  color: #333;
+  font-size: 24rpx;
+  background: #fafafa;
+  box-shadow: 0 0 8rpx #fff;
+}
+
+.content-review-pic {
+  float: right;
+  width: 140rpx;
+  height: 140rpx;
+  box-shadow: 0 0 4rpx #aaa;
+}
+
+.note-review-txt {
+  margin-left: 70rpx;
+  font-size: 24rpx;
+  line-height: 34rpx;
+  text-align: justify;
+  width: 400rpx;
+  /* 多行文字溢出 */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}

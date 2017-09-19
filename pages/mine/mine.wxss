@@ -13,17 +13,17 @@
 }
 
 .input-box {
-  padding: 10px 10px;
+  padding: 20rpx 20rpx;
   background-color: #444;
 }
 
 .input {
-  padding: 2px 10px;
-  height: 30px;
+  padding: 4rpx 20rpx;
+  height: 60rpx;
   color: #333;
-  font-size: 14px;
+  font-size: 28rpx;
   background-color: #eee;
-  border-radius: 5px;
+  border-radius: 10rpx;
 }
 
 .input-placeholder {
@@ -31,19 +31,19 @@
 }
 
 .use-avator {
-  margin: 25px auto;
+  margin: 50rpx auto;
   display:block;
-  width: 120px;
-  height: 120px;
-  border: 2px solid #333;
+  width: 240rpx;
+  height: 240rpx;
+  border: 4rpx solid #333;
   border-radius: 50%;
-  box-shadow: 0 0 2px #aaa;
+  box-shadow: 0 0 4rpx #aaa;
 }
 
 .list-box {
-  margin-bottom: 10px;
+  margin-bottom: 20rpx;
 }
 .list-item {
-  line-height: 30px;
-  font-size: 14px;
+  line-height: 60rpx;
+  font-size: 28rpx;
 }

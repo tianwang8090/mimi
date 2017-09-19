@@ -1,47 +1,47 @@
 .content-list-box {
-  padding: 10px;
+  padding: 20rpx;
   padding-bottom: 0;
   box-sizing: border-box;
 }
 
 .content-wrapper {
-  margin-bottom: 10px;
-  padding: 10px;
+  margin-bottom: 20rpx;
+  padding: 20rpx;
   box-sizing: border-box;
   background: #fafafa;
-  box-shadow: 0 0 2px #aaaaaa;
+  box-shadow: 0 0 4rpx #aaaaaa;
 }
 
 .content-title-box {
-  margin-bottom: 10px;
+  margin-bottom: 20rpx;
 }
 
 .avator {
   vertical-align: middle;
   border-radius: 50%;
-  width: 30px;
-  height: 30px;
+  width: 60rpx;
+  height: 60rpx;
   background: #333;
 }
 
 .nick {
   display: inline-block;
-  margin-left: 5px;
+  margin-left: 10rpx;
   box-sizing: border-box;
-  max-width: 160px;
+  max-width: 320rpx;
   overflow: hidden;
   white-space: nowrap;
   vertical-align: middle;
-  font-size: 12px;
+  font-size: 24rpx;
   color: #666;
   text-overflow: ellipsis;
 }
 
 .time {
-  margin-left: 20px;
+  margin-left: 40rpx;
   box-sizing: border-box;
   vertical-align: middle;
-  font-size: 12px;
+  font-size: 24rpx;
   color: #999;
 }
 
@@ -50,28 +50,28 @@
 }
 
 .content-txt {
-  margin-bottom: 10px;
+  margin-bottom: 20rpx;
   color: #333;
-  font-size: 13px;
-  line-height: 24px;
+  font-size: 26rpx;
+  line-height: 48rpx;
   text-align: justify;
 }
 
 .content-info-box {
-  height: 40px;
-  font-size: 13px;
+  height: 80rpx;
+  font-size: 26rpx;
 }
 
 .content-info-item-box {
   display: inline-block;
-  padding: 0 10px;
+  padding: 0 20rpx;
   box-sizing: border-box;
-  height: 40px;
-  line-height: 40px;
+  height: 80rpx;
+  line-height: 80rpx;
   text-align: center;
 }
 .content-info-item-box .iconfont{
-  margin-right: 5px;
+  margin-right: 10rpx;
 }
 .more-box {
   float: right;
@@ -81,9 +81,9 @@
 }
 
 .footer-box {
-  height: 40px;
-  line-height: 40px;
+  height: 80rpx;
+  line-height: 80rpx;
   color: #999;
-  font-size: 12px;
+  font-size: 24rpx;
   text-align: center;
 }

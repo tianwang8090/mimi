@@ -1,41 +1,41 @@
 /* content start */
 .content-wrapper {
-  padding: 10px;
+  padding: 20rpx;
   box-sizing: border-box;
   background: #fafafa;
-  border-bottom: 5px solid #eee;
+  border-bottom: 10rpx solid #eee;
 }
 
 .content-title-box {
-  margin-bottom: 10px;
+  margin-bottom: 20rpx;
 }
 
 .avator {
   vertical-align: middle;
   border-radius: 50%;
-  width: 30px;
-  height: 30px;
+  width: 60rpx;
+  height: 60rpx;
   background: #333;
 }
 
 .nick {
   display: inline-block;
-  margin-left: 5px;
+  margin-left: 10rpx;
   box-sizing: border-box;
-  max-width: 160px;
+  max-width: 320rpx;
   overflow: hidden;
   white-space: nowrap;
   vertical-align: middle;
-  font-size: 12px;
+  font-size: 24rpx;
   color: #666;
   text-overflow: ellipsis;
 }
 
 .time {
-  margin-left: 20px;
+  margin-left: 40rpx;
   box-sizing: border-box;
   vertical-align: middle;
-  font-size: 12px;
+  font-size: 24rpx;
   color: #999;
 }
 
@@ -44,24 +44,24 @@
 }
 
 .content-txt {
-  margin-bottom: 10px;
+  margin-bottom: 20rpx;
   color: #333;
-  font-size: 13px;
-  line-height: 24px;
+  font-size: 26rpx;
+  line-height: 48rpx;
   text-align: justify;
 }
 
 .content-info-box {
-  height: 40px;
-  font-size: 13px;
+  height: 80rpx;
+  font-size: 26rpx;
 }
 
 .content-info-item-box {
   display: inline-block;
-  padding: 0 10px;
+  padding: 0 20rpx;
   box-sizing: border-box;
-  height: 40px;
-  line-height: 40px;
+  height: 80rpx;
+  line-height: 80rpx;
   text-align: center;
 }
 
@@ -70,7 +70,7 @@
 }
 
 .content-info-item-box .iconfont {
-  margin-right: 5px;
+  margin-right: 10rpx;
 }
 
 .more-box .iconfont {
@@ -83,9 +83,9 @@
 
 .tab-box .tab {
   display: inline-block;
-  width: 60px;
-  line-height: 40px;
-  font-size: 14px;
+  width: 120rpx;
+  line-height: 80rpx;
+  font-size: 28rpx;
   color: #666;
   text-align: center;
 }
@@ -95,7 +95,7 @@
 
 
 .panel-box {
-  min-height: 400px;
+  min-height: 800rpx;
 }
 /* tab end */
 
@@ -103,30 +103,30 @@
 /* comment start */
 
 .comment-title-box .commented-nick-right{
-  font-size:10px;
+  font-size:20rpx;
   vertical-align:middle;
   color:#999;
-  margin-left:5px;
+  margin-left:10rpx;
   
 }
 
 .comment-list-box {
-  margin-bottom: 10px;
+  margin-bottom: 20rpx;
   box-sizing: border-box;
 }
 
 .comment-wrapper {
-  padding: 10px;
+  padding: 20rpx;
   box-sizing: border-box;
   color: #333;
-  font-size: 12px;
+  font-size: 24rpx;
   background: #fafafa;
-  border-bottom: 1px solid #eee;
+  border-bottom: 2rpx solid #eee;
 }
 
 .comment-txt {
-  margin-left: 35px;
-  line-height: 17px;
+  margin-left: 70rpx;
+  line-height: 34rpx;
   text-align: justify;
 }
 
@@ -136,10 +136,10 @@
 
 .comment-info-item-box {
   display: inline-block;
-  padding: 0 10px;
+  padding: 0 20rpx;
   box-sizing: border-box;
-  height: 20px;
-  line-height: 20px;
+  height: 40rpx;
+  line-height: 40rpx;
   text-align: center;
 }
 
@@ -149,19 +149,19 @@
 /* like start */
 
 .like-list-box {
-  padding: 0 10px;
+  padding: 0 20rpx;
   background: #fafafa;
 }
 .like-list-box .like-wrapper {
-  padding: 5px 0;
-  border-bottom: 1px solid #eee;
+  padding: 10rpx 0;
+  border-bottom: 2rpx solid #eee;
 }
 /* like end */
 
 .footer-box {
-  height: 40px;
-  line-height: 40px;
+  height: 80rpx;
+  line-height: 80rpx;
   color: #999;
-  font-size: 12px;
+  font-size: 24rpx;
   text-align: center;
 }
