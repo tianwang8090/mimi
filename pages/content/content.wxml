@@ -1,6 +1,7 @@
 <import src="../../components/content-box.wxml"></import>
 <import src="../../components/comment-box.wxml"></import>
 <import src="../../components/like-box.wxml"></import>
+<import src="../../components/input-box/input-box.wxml"></import>
 
 <view>
   <view class="content-wrapper">
@@ -31,4 +32,8 @@
   <view class="footer-box">
     ~~ 不要再扯啦 ~~
   </view>
+</view>
+
+<view class='input-wrapper {{inputFocus ? "focus" : ""}}'>
+  <template is="input_model" data=""></template>
 </view>

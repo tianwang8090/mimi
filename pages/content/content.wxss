@@ -1,4 +1,7 @@
+@import "../../components/input-box/input-box.wxss";
+
 /* content start */
+
 .content-wrapper {
   padding: 20rpx;
   box-sizing: border-box;
@@ -165,3 +168,17 @@
   font-size: 24rpx;
   text-align: center;
 }
+
+/*  input start  */
+
+.input-wrapper {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.input-wrapper.focus {
+  bottom: 20rpx;
+}
+/*  input end  */

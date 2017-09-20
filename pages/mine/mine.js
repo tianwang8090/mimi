@@ -7,7 +7,8 @@ Page({
       avator_url: "../../assets/imgs/avator1.jpeg",
       nick: "一缕破伤风"
     },
-    showInput: false
+    showInput: false,
+    autoFocus: true
   },
   onLoad: function(options) {
     //Do some initialize when page load.

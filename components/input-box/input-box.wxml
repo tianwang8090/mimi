@@ -1,0 +1,7 @@
+<template name="input_model">
+
+  <view class='input-box'>
+    <input class='input' placeholder-class="input-placeholder" type='text' bindconfirm="inputDoneHandle" placeholder="{{placeholder || '说点什么...'}}" confirm-type="{{confirm-type || 'done'}}" catchtap="tapInputHandle" bindfocus="focusHandle" bindblur="blurHandle" focus="{{autofocus}}" maxlength='{{14}}'></input>
+  </view>
+
+</template>

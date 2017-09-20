@@ -61,7 +61,8 @@ Page({
         user_nick: "末日小丑",
         like_time: "5分钟前"
       }
-    ]
+    ],
+    inputFocus: false
   },
   onLoad: function (options) {
     //Do some initialize when page load.
@@ -105,6 +106,17 @@ Page({
     let name = e.currentTarget.dataset.name;
     this.setData({
       activeTab: name
+    });
+  },
+  tapInputHandle(e) {},
+  focusHandle(e) {
+    this.setData({
+      inputFocus: true
+    });
+  },
+  blurHandle(e) {
+    this.setData({
+      inputFocus: false
     });
   }
 })

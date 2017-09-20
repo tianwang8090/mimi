@@ -1,0 +1,17 @@
+.input-box {
+  padding: 20rpx;
+  background-color: #444;
+}
+
+.input {
+  padding: 4rpx 20rpx;
+  height: 60rpx;
+  color: #333;
+  font-size: 28rpx;
+  background-color: #eee;
+  border-radius: 10rpx;
+}
+
+.input-placeholder {
+  color: #aaa;
+}
