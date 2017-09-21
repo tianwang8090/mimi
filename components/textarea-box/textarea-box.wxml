@@ -1,0 +1,7 @@
+<template name="textarea_model">
+
+  <view class="textarea-box">
+    <textarea class="textarea" value="{{value}}" maxlength="{{maxlength || -1}}" auto-focus="{{autofocus || true}}" focus="{{focus || true}}" cursor-spacing="{{20}}" auto-height="{{autoheight || true}}" bindfocus="" bindblur="" bindlinechange="" bindinput="" bindconfirm="" placeholder="{{placeholder || ''}}" />
+  </view>
+
+</template>

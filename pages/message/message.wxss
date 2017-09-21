@@ -55,7 +55,7 @@
 
 .comment-txt {
   margin-left: 70rpx;
-  font-size: 24rpx;
+  font-size: 26rpx;
   line-height: 34rpx;
   text-align: justify;
   width: 400rpx;

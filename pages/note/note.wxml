@@ -1,7 +1,7 @@
 <view class="container">
 
   <view class="pen-wrapper">
-    <view class='pen-box'>
+    <view class='pen-box' bind:tap="writeTapHandle">
       <i class="iconfont icon-writefill"></i>
     </view>
   </view>

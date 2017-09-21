@@ -1,0 +1,18 @@
+<import src="../../components/textarea-box/textarea-box.wxml" />
+
+<view class="container">
+
+  <view class="img-btn" wx:if="{{!contentImgSrc}}" bind:tap="chooseImgHandle">
+    <i class="iconfont icon-pic"></i>
+    <text>点击添加一张图片</text>
+  </view>
+
+  <view class="img-box" wx:if="{{contentImgSrc}}">
+    <image src="{{contentImgSrc}}" lazy-load bind:tap="chooseImgHandle"></image>
+  </view>
+
+  <view class="textarea-wrapper" bind:tap="textareaWrapTapHandle">
+    <template is="textarea_model" data="{{value: content, ...textareaOptions}}" />
+  </view>
+
+</view>

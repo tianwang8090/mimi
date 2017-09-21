@@ -4,7 +4,8 @@
     "pages/message/message",
     "pages/note/note",
     "pages/mine/mine",
-    "pages/content/content"
+    "pages/content/content",
+    "pages/write/write"
   ],
   "window": {
     "backgroundTextStyle": "dark",
