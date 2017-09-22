@@ -11,7 +11,8 @@
     "backgroundTextStyle": "dark",
     "navigationBarBackgroundColor": "#333",
     "navigationBarTitleText": "MiMi",
-    "navigationBarTextStyle": "light"
+    "navigationBarTextStyle": "light",
+    "enablePullDownRefresh": true
   },
   "tabBar": {
     "color": "#999",

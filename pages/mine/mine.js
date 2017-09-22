@@ -3,16 +3,15 @@ const app = getApp()
 
 Page({
   data: {
-    userInfo: {
-      avator_url: "../../assets/imgs/avator1.jpeg",
-      nick: "一缕破伤风"
-    },
+    userInfo: null,
     showInput: false,
     autoFocus: true
   },
   onLoad: function(options) {
     //Do some initialize when page load.
-    
+    this.setData({
+      userInfo: app.globalData.userInfo
+    });
   },
   onReady: function() {
     //Do some when page ready.
@@ -56,5 +55,19 @@ Page({
       showInput: false
     });
   },
-  tapInputHandle() {}
+  tapInputHandle() { },
+  // 点击头像
+  avatorTapHandle(e) {
+    wx.chooseImage({
+      count: 1,	// 默认为9
+      sizeType: ['original', 'compressed'],	// 指定原图或者压缩图
+      sourceType: ['album', 'camera'],	// 指定图片来源
+      success: res  => {
+        let tempFilePaths = res.tempFilePaths;
+        let obj = {}, s = 'userInfo.avator_url';
+        obj[s] = tempFilePaths[0];
+        this.setData(obj);
+      }
+    })
+  }
 })

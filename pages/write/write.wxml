@@ -1,6 +1,15 @@
 <import src="../../components/textarea-box/textarea-box.wxml" />
 
-<view class="container">
+<view>
+
+  <view class="title-wrapper">
+    <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="dateChangeHandle">
+      <view class="date">2017-09-09</view>
+    </picker>
+    <picker bindchange="weatherChangeHandle" value="{{index}}" range="{{array}}">
+      <view class="weather">晴</view>
+    </picker>
+  </view>
 
   <view class="img-btn" wx:if="{{!contentImgSrc}}" bind:tap="chooseImgHandle">
     <i class="iconfont icon-pic"></i>
@@ -8,11 +17,18 @@
   </view>
 
   <view class="img-box" wx:if="{{contentImgSrc}}">
-    <image src="{{contentImgSrc}}" lazy-load bind:tap="chooseImgHandle"></image>
+    <image src="{{contentImgSrc}}" bind:tap="chooseImgHandle"></image>
   </view>
 
   <view class="textarea-wrapper" bind:tap="textareaWrapTapHandle">
     <template is="textarea_model" data="{{value: content, ...textareaOptions}}" />
+  </view>
+
+  <view class="tool-wrapper">
+    <view class="tool-box">
+      <i class="iconfont icon-plane {{share ? 'shared' : ''}}"></i>
+      <i class="iconfont icon-check"></i>
+    </view>
   </view>
 
 </view>

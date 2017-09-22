@@ -1,0 +1,25 @@
+.comment-title-box .commented-nick-right {
+  font-size: 24rpx;
+  vertical-align: middle;
+  color: #999;
+  margin-left: 10rpx;
+}
+
+.comment-txt {
+  margin-left: 70rpx;
+  font-size: 32rpx;
+  text-align: justify;
+}
+
+.comment-info-box {
+  text-align: right;
+}
+
+.comment-info-item-box {
+  display: inline-block;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+  height: 40rpx;
+  line-height: 40rpx;
+  text-align: center;
+}

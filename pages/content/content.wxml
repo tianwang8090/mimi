@@ -1,7 +1,7 @@
-<import src="../../components/content-box.wxml"></import>
-<import src="../../components/comment-box.wxml"></import>
-<import src="../../components/like-box.wxml"></import>
-<import src="../../components/input-box/input-box.wxml"></import>
+<import src="../../components/content-box/content-box.wxml"></import>
+<import src="../../components/comment-box/comment-box.wxml"></import>
+<import src="../../components/like-box/like-box.wxml"></import>
+<import src="../../components/input-box/input-box/input-box.wxml"></import>
 
 <view>
   <view class="content-wrapper">

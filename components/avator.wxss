@@ -1,0 +1,35 @@
+.avator {
+  vertical-align: middle;
+  border-radius: 50%;
+  width: 60rpx;
+  height: 60rpx;
+  background: #333;
+}
+
+.nick {
+  display: inline-block;
+  margin-left: 10rpx;
+  box-sizing: border-box;
+  max-width: 320rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  vertical-align: middle;
+  font-size: 24rpx;
+  color: #666;
+  text-overflow: ellipsis;
+}
+
+.nick + i.iconfont {
+  display: inline-block;
+  margin-left: 6rpx;
+  vertical-align: middle;
+  font-size: 24rpx;
+}
+
+.time {
+  margin-left: 40rpx;
+  box-sizing: border-box;
+  vertical-align: middle;
+  font-size: 24rpx;
+  color: #999;
+}

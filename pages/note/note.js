@@ -69,5 +69,10 @@ Page({
     wx.navigateTo({
       url: '../write/write'
     })
+  },
+  noteTapHandle(e) {
+    wx.navigateTo({
+      url: '../write/write?content_id=' + 120,
+    });
   }
 })

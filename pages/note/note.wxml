@@ -8,7 +8,7 @@
 
   <view class='note-wrapper'>
     <view class='note-box'>
-      <view class='note-item'>
+      <view class='note-item' wx:for="{{[1,2,3,4,5,6,7]}}" wx:key="this" >
         <template is="note_model"></template>
       </view>
     </view>
@@ -25,6 +25,7 @@
       <view class="date-d">07</view>
       <text class="date">2017.07</text>
       <text class="weather">晴</text>
+      <i class="iconfont icon-plane"></i>
     </view>
 
     <view class="note-review-txt">如果你无法简洁的表达你的想法，那只说明你还不够了解他。如果你无法简洁的表达你的想法，那只说明你还不够了解他。如果你无法简洁的表达你的想法，那只说明你还不够了解他。</view>

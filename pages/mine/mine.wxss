@@ -14,6 +14,7 @@
 }
 
 .user-avator-box {
+  position: relative;
   padding: 50rpx 0;
 }
 
@@ -27,10 +28,21 @@
   box-shadow: 0 0 4rpx #aaa;
 }
 
+.use-avator + i.iconfont {
+  position:absolute;
+  display:block;
+  margin:0 auto;  
+  width:240rpx;
+  top:40rpx;
+  left:0;
+  right:0;
+  text-align:right;
+}
+
 .list-box {
   margin-bottom: 20rpx;
 }
 .list-item {
   line-height: 60rpx;
-  font-size: 28rpx;
+  font-size: 32rpx;
 }

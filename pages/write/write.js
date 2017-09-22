@@ -68,6 +68,9 @@ Page({
   onShareAppMessage: function () {
 
   },
+  /**
+   * 点击输入框容器也能focus
+   */
   textareaWrapTapHandle() {
     let obj = {},
       s = "textareaOptions.focus";
@@ -90,5 +93,15 @@ Page({
         });
       }
     })
+  },
+  /**
+   * 日期改变
+   */
+  dateChangeHandle(e) {},
+  /**
+   * 天气改变
+   */
+  weatherChangeHandle(e) {
+    
   }
 })

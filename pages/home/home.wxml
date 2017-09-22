@@ -1,4 +1,4 @@
-<import src="../../components/content-box.wxml"/>
+<import src="../../components/content-box/content-box.wxml"/>
 <view>
   <view class="content-list-box">
     <view wx:for="{{contentList}}" wx:key="{{item.content_id}}" class="content-wrapper">

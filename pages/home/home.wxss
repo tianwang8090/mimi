@@ -1,3 +1,6 @@
+@import "../../components/avator.wxss";
+@import "../../components/content-box/content-box.wxss";
+
 .content-list-box {
   padding: 20rpx;
   padding-bottom: 0;
@@ -9,75 +12,7 @@
   padding: 20rpx;
   box-sizing: border-box;
   background: #fafafa;
-  box-shadow: 0 0 4rpx #aaaaaa;
-}
-
-.content-title-box {
-  margin-bottom: 20rpx;
-}
-
-.avator {
-  vertical-align: middle;
-  border-radius: 50%;
-  width: 60rpx;
-  height: 60rpx;
-  background: #333;
-}
-
-.nick {
-  display: inline-block;
-  margin-left: 10rpx;
-  box-sizing: border-box;
-  max-width: 320rpx;
-  overflow: hidden;
-  white-space: nowrap;
-  vertical-align: middle;
-  font-size: 24rpx;
-  color: #666;
-  text-overflow: ellipsis;
-}
-
-.time {
-  margin-left: 40rpx;
-  box-sizing: border-box;
-  vertical-align: middle;
-  font-size: 24rpx;
-  color: #999;
-}
-
-.content-img {
-  width: 100%;
-}
-
-.content-txt {
-  margin-bottom: 20rpx;
-  color: #333;
-  font-size: 26rpx;
-  line-height: 48rpx;
-  text-align: justify;
-}
-
-.content-info-box {
-  height: 80rpx;
-  font-size: 26rpx;
-}
-
-.content-info-item-box {
-  display: inline-block;
-  padding: 0 20rpx;
-  box-sizing: border-box;
-  height: 80rpx;
-  line-height: 80rpx;
-  text-align: center;
-}
-.content-info-item-box .iconfont{
-  margin-right: 10rpx;
-}
-.more-box {
-  float: right;
-}
-.more-box .iconfont {
-  margin: 0;
+  box-shadow: 0 0 4rpx #aaa;
 }
 
 .footer-box {

@@ -3,6 +3,7 @@
   <view class="content-title-box">
     <image class="avator" src="{{author_avator_url}}" alt="" />
     <text class="nick">{{author_nick}}</text>
+    <i class="iconfont {{gender === 'male' ? 'icon-male' : (gender === 'female' ? 'icon-female' : 'icon-alien')}}"></i>
     <text class="time">{{time}}</text>
   </view>
 
@@ -19,7 +20,7 @@
     </view>
     <view class="content-info-item-box comment-box" data-index="{{index}}" bind:tap="commentHandle">
       <i class="iconfont icon-comment"></i>
-      <span class="coment-count">{{comment_count}}</span>
+      <span class="comment-count">{{comment_count}}</span>
     </view>
     <view class="content-info-item-box more-box" bind:tap="moreHandle">
       <i class="iconfont icon-more"></i>

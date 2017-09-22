@@ -1,0 +1,42 @@
+.content-title-box {
+  margin-bottom: 20rpx;
+}
+
+.content-img {
+  width: 670rpx;
+  height: 670rpx;
+}
+
+.content-txt {
+  margin-bottom: 20rpx;
+  color: #333;
+  font-size: 32rpx;
+  line-height: 48rpx;
+  text-align: justify;
+}
+
+.content-info-box {
+  height: 80rpx;
+  font-size: 24rpx;
+}
+
+.content-info-item-box {
+  display: inline-block;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+}
+
+.content-info-item-box.more-box {
+  float: right;
+}
+
+.content-info-item-box .iconfont {
+  margin-right: 10rpx;
+}
+
+.more-box .iconfont {
+  margin: 0;
+}

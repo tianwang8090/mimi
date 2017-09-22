@@ -7,10 +7,10 @@ App({
     wx.setStorageSync('logs', logs)
     // 检查登录状态
     wx.checkSession({
-      success: function(){
-        
+      success: function () {
+
       },
-      fail: function(){
+      fail: function () {
         // 登录
         wx.login({
           success: res => {
@@ -20,7 +20,7 @@ App({
         })
       },
     })
-    
+
     // 获取用户信息
     wx.getSetting({
       success: res => {
@@ -43,6 +43,19 @@ App({
     })
   },
   globalData: {
-    userInfo: null
+    userInfo: {
+      openId: "",
+      nickName: "一缕破伤风",
+      gender: "", //性别 0：未知、1：男、2：女
+      city: "",
+      province: "",
+      country: "",
+      avatarUrl: "../../assets/imgs/avator1.jpeg",
+      unionId: "",
+      watermark: {
+        appid: "",
+        timestamp: ""
+      }
+    }
   }
 })

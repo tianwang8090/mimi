@@ -1,6 +1,6 @@
 .container {
+  padding: 0 0 200rpx;
   background-color: #3f51b5;
-  min-height: 100%;
 }
 
 .pen-wrapper {
@@ -33,7 +33,7 @@
   line-height: 60rpx;
   background: #333;
   color: #fff;
-  font-size: 36rpx;
+  font-size: 32rpx;
   text-align: center;
 }
 
@@ -63,6 +63,11 @@
 }
 
 .note-box {
+  
+}
+
+.note-item {
+  margin-bottom: 20rpx;
   padding: 20rpx;
   box-sizing: border-box;
   height: 180rpx;
@@ -70,6 +75,10 @@
   font-size: 24rpx;
   background: #fafafa;
   box-shadow: 0 0 8rpx #fff;
+}
+
+.note-item:last-child {
+  margin-bottom: 0;
 }
 
 .content-review-pic {
@@ -81,13 +90,19 @@
 
 .note-review-txt {
   margin-left: 70rpx;
-  font-size: 26rpx;
-  line-height: 34rpx;
-  text-align: justify;
+  font-size: 32rpx;
   width: 400rpx;
   /* 多行文字溢出 */
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
   overflow: hidden;
+}
+
+
+.note-title-box i.iconfont {
+  display: inline-block;
+  margin-left:40rpx;
+  vertical-align: middle;
+  font-size: 24rpx;
 }

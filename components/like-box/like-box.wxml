@@ -3,6 +3,7 @@
   <view class="like-title-box">
     <image class="avator" src="{{user_avator_url}}" alt="" />
     <text class="nick">{{user_nick}}</text>
+    <i class="iconfont {{gender === 'male' ? 'icon-male' : (gender === 'female' ? 'icon-female' : 'icon-alien')}}"></i>
     <text class="time">{{like_time}}</text>
   </view>
 

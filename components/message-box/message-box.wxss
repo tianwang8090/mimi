@@ -1,0 +1,25 @@
+.msg-type-txt {
+  margin-left: 40rpx;
+  box-sizing: border-box;
+  vertical-align: middle;
+  font-size: 24rpx;
+  color: #999;
+}
+
+.comment-txt {
+  margin-left: 70rpx;
+  font-size: 32rpx;
+  width: 400rpx;
+  /* 多行文字溢出 */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.content-review-pic {
+  float: right;
+  width: 140rpx;
+  height: 140rpx;
+  box-shadow: 0 0 4rpx #aaaaaa;
+}

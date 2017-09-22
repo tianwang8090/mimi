@@ -1,4 +1,7 @@
+@import "../../components/avator.wxss";
 @import "../../components/input-box/input-box.wxss";
+@import "../../components/content-box/content-box.wxss";
+@import "../../components/comment-box/comment-box.wxss";
 
 /* content start */
 
@@ -9,78 +12,14 @@
   border-bottom: 10rpx solid #eee;
 }
 
-.content-title-box {
-  margin-bottom: 20rpx;
-}
-
-.avator {
-  vertical-align: middle;
-  border-radius: 50%;
-  width: 60rpx;
-  height: 60rpx;
-  background: #333;
-}
-
-.nick {
-  display: inline-block;
-  margin-left: 10rpx;
-  box-sizing: border-box;
-  max-width: 320rpx;
-  overflow: hidden;
-  white-space: nowrap;
-  vertical-align: middle;
-  font-size: 24rpx;
-  color: #666;
-  text-overflow: ellipsis;
-}
-
-.time {
-  margin-left: 40rpx;
-  box-sizing: border-box;
-  vertical-align: middle;
-  font-size: 24rpx;
-  color: #999;
-}
-
 .content-img {
-  width: 100%;
+  width: 710rpx;
+  height: 710rpx;
 }
 
-.content-txt {
-  margin-bottom: 20rpx;
-  color: #333;
-  font-size: 26rpx;
-  line-height: 48rpx;
-  text-align: justify;
-}
-
-.content-info-box {
-  height: 80rpx;
-  font-size: 26rpx;
-}
-
-.content-info-item-box {
-  display: inline-block;
-  padding: 0 20rpx;
-  box-sizing: border-box;
-  height: 80rpx;
-  line-height: 80rpx;
-  text-align: center;
-}
-
-.content-info-item-box.more-box {
-  float: right;
-}
-
-.content-info-item-box .iconfont {
-  margin-right: 10rpx;
-}
-
-.more-box .iconfont {
-  margin: 0;
-}
 
 /* content end */
+
 
 /* tab start */
 
@@ -88,30 +27,24 @@
   display: inline-block;
   width: 120rpx;
   line-height: 80rpx;
-  font-size: 28rpx;
+  font-size: 32rpx;
   color: #666;
   text-align: center;
 }
+
 .tab-box .tab.active {
   font-weight: 600;
 }
 
-
 .panel-box {
   min-height: 800rpx;
 }
+
+
 /* tab end */
 
 
 /* comment start */
-
-.comment-title-box .commented-nick-right{
-  font-size:20rpx;
-  vertical-align:middle;
-  color:#999;
-  margin-left:10rpx;
-  
-}
 
 .comment-list-box {
   margin-bottom: 20rpx;
@@ -122,32 +55,13 @@
   padding: 20rpx;
   box-sizing: border-box;
   color: #333;
-  font-size: 24rpx;
   background: #fafafa;
   border-bottom: 2rpx solid #eee;
 }
 
-.comment-txt {
-  margin-left: 70rpx;
-  line-height: 34rpx;
-  text-align: justify;
-}
-
-.comment-info-box {
-  text-align: right;
-}
-
-.comment-info-item-box {
-  display: inline-block;
-  padding: 0 20rpx;
-  box-sizing: border-box;
-  height: 40rpx;
-  line-height: 40rpx;
-  text-align: center;
-}
-
 
 /* comment end */
+
 
 /* like start */
 
@@ -155,10 +69,13 @@
   padding: 0 20rpx;
   background: #fafafa;
 }
+
 .like-list-box .like-wrapper {
   padding: 10rpx 0;
   border-bottom: 2rpx solid #eee;
 }
+
+
 /* like end */
 
 .footer-box {
@@ -169,6 +86,7 @@
   text-align: center;
 }
 
+
 /*  input start  */
 
 .input-wrapper {
@@ -178,7 +96,5 @@
   bottom: 0;
 }
 
-.input-wrapper.focus {
-  bottom: 20rpx;
-}
+
 /*  input end  */

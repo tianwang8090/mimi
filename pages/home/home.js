@@ -58,6 +58,22 @@ Page({
       })
     }
   },
+  onPullDownRefresh: function () {
+    // 下拉刷新
+    console.log("ddd");
+  },
+  onReachBottom() {
+    // 上拉加载
+    wx.request({
+      url: '',
+      header: {
+        'Content-Type': 'application/json'
+      },
+      success: function(res) {
+        
+      }
+    })
+  },
   getUserInfo: function (e) {
     console.log(e)
     app.globalData.userInfo = e.detail.userInfo
@@ -66,17 +82,18 @@ Page({
       hasUserInfo: true
     })
   },
-  //事件处理函数
   likeHandle(e) {
+    // 点赞处理
     let dataset = e.currentTarget.dataset;
     let params = {};
-      let s1 = `contentList[${dataset.index}].like`;
-      let s2 = `contentList[${dataset.index}].like_count`;
+    let s1 = `contentList[${dataset.index}].like`;
+    let s2 = `contentList[${dataset.index}].like_count`;
     params[s1] = !dataset.like;
     params[s2] = dataset.like ? --this.data.contentList[dataset.index].like_count : ++this.data.contentList[dataset.index].like_count;
     this.setData(params);
   },
   commentHandle(e) {
+    // 点评论处理
     let dataset = e.currentTarget.dataset,
       _data = this.data.contentList;
     wx.navigateTo({
@@ -84,6 +101,7 @@ Page({
     })
   },
   moreHandle(e) {
+    // 点更多处理
     console.log(e)
     common.report(e.target.dataset);
   }

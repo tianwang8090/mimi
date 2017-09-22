@@ -3,9 +3,11 @@
   <view class="comment-title-box">
     <image class="avator" src="{{author_avator_url}}" alt="" />
     <text class="nick">{{author_nick}}</text>
+    <i class="iconfont {{(gender === 'male') ? 'icon-male' : (gender === 'female' ? 'icon-female' : 'icon-alien')}}"></i>
     <block wx:if="{{!!commented_nick}}">
       <i class="iconfont icon-right commented-nick-right"></i>
       <text class="nick">{{commented_nick}}</text>
+      <i class="iconfont {{(commented_gender === 'male') ? 'icon-male' : (commented_gender === 'female' ? 'icon-female' : 'icon-alien')}}"></i>
     </block>
     <text class="time">{{time}}</text>
   </view>

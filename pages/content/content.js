@@ -10,6 +10,7 @@ Page({
       author_avator_url: "../../assets/imgs/avator1.jpeg",
       author_nick: "一缕破伤风",
       author_id: "22",
+      gender: "female",
       time: "1小时前",
       content_img: "../../assets/imgs/pic1.jpeg",
       content_txt: "如果你无法简洁的表达你的想法，那只说明你还不够了解他。如果你无法简洁的表达你的想法，那只说明你还不够了解他。如果你无法简洁的表达你的想法，那只说明你还不够了解他。如果你无法简洁的表达你的想法，那只说明你还不够了解他。如果你无法简洁的表达你的想法，那只说明你还不够了解他。如果你无法简洁的表达你的想法，那只说明你还不够了解他。如果你无法简洁的表达你的想法，那只说明你还不够了解他。",
@@ -22,6 +23,7 @@ Page({
       author_avator_url: "../../assets/imgs/avator1.jpeg",
       author_nick: "一缕破伤风",
       author_id: "23",
+      gender: "male",
       commented_nick: "",
       time: "1小时前",
       comment_txt: "如果你无法简洁的表达你的想法，那只说明你还不够了解他。"
@@ -30,6 +32,7 @@ Page({
       author_avator_url: "../../assets/imgs/avator1.jpeg",
       author_nick: "一缕破伤风",
       author_id: "24",
+      gender: "female",
       commented_nick: "someBody",
       time: "1小时前",
       comment_txt: "如果你无法简洁的表达你的想法，那只说明你还不够了解他。"
@@ -38,6 +41,7 @@ Page({
       author_avator_url: "../../assets/imgs/avator1.jpeg",
       author_nick: "一缕破伤风",
       author_id: "25",
+      gender: "",
       commented_nick: "",
       time: "1小时前",
       comment_txt: "如果你无法简洁的表达你的想法，那只说明你还不够了解他。"

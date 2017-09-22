@@ -6,21 +6,22 @@
 
 <view>
 
-  <view class="user-avator-box">
-    <image class="use-avator" src="{{userInfo.avator_url}}"></image>
+  <view class="user-avator-box" bind:tap="avatorTapHandle">
+    <image class="use-avator" src="{{userInfo.avatarUrl}}"></image>
+    <i class="iconfont {{gender === 'male' ? 'icon-male' : (gender === 'female' ? 'icon-female' : 'icon-alien')}}"></i>
   </view>
 
   <view class="list-box weui-cells weui-cells_after-title">
     <view class="list-item weui-cell weui-cell_access" hover-class="weui-cell_active" bind:tap='nickHandle'>
       <view class="weui-cell__bd">昵称</view>
-      <view class="weui-cell__ft weui-cell__ft_in-access">{{userInfo.nick}}</view>
+      <view class="weui-cell__ft weui-cell__ft_in-access">{{userInfo.nickName}}</view>
     </view>
-    <view class="list-item weui-cell weui-cell_access">
+    <!-- <view class="list-item weui-cell weui-cell_access">
       <view class="weui-cell__bd">密码锁</view>
       <view>
         <switch checked bindchange="switch1Change" />
       </view>
-    </view>
+    </view> -->
   </view>
 
   <view class="list-box weui-cells weui-cells_after-title">
