@@ -2,13 +2,16 @@
 
 <view>
 
-  <view class="title-wrapper">
+  <view class="title-wrapper clearfix">
     <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="dateChangeHandle">
       <view class="date">2017-09-09</view>
     </picker>
     <picker bindchange="weatherChangeHandle" value="{{index}}" range="{{weatherArray}}">
       <view class="weather">晴</view>
     </picker>
+    <view class="share-box pull-right">
+      <i class="iconfont icon-plane {{share ? 'shared' : ''}}" bind:tap="shareHandle"></i>
+    </view>
   </view>
 
   <view class="img-btn" wx:if="{{!contentImgSrc}}" bind:tap="chooseImgHandle">
@@ -22,13 +25,6 @@
 
   <view class="textarea-wrapper" bind:tap="textareaWrapTapHandle">
     <template is="textarea_model" data="{{value: content, ...textareaOptions}}" />
-  </view>
-
-  <view class="tool-wrapper">
-    <view class="tool-box clearfix">
-      <i class="iconfont icon-plane {{share ? 'shared' : ''}}" bind:tap="shareHandle"></i>
-      <i class="iconfont icon-check pull-right" bind:tap="doneHandle"></i>
-    </view>
   </view>
 
 </view>

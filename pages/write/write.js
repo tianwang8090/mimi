@@ -8,11 +8,11 @@ Page({
     contentImgSrc: "",
     share: true,
     textareaOptions: {
-      autofocus: true,
-      focus: true,
+      autofocus: false,
+      focus: false,
       placeholder: "写下你的MiMi..."
     },
-    weatherArray: ["晴天","阴","小雨","大雨","微风","雪","雾","霾","龙卷风","沙尘暴"]
+    weatherArray: ["晴天", "阴", "小雨", "大雨", "微风", "雪", "雾", "霾", "龙卷风", "沙尘暴"]
   },
 
   /**
@@ -115,5 +115,9 @@ Page({
    */
   doneHandle(e) {
     wx.navigateBack();
-  }
+  },
+  /**
+   * textarea确认按钮
+   */
+  textareaConfirmHandle(e) {}
 })

@@ -66,7 +66,7 @@ Page({
         like_time: "5分钟前"
       }
     ],
-    inputFocus: false
+    focus: false
   },
   onLoad: function (options) {
     //Do some initialize when page load.
@@ -109,7 +109,11 @@ Page({
    * 点击评论回复
    * @param {*} e 
    */
-  commentTapHandle(e) { },
+  commentTapHandle(e) {
+    this.setData({
+      focus: true
+    });
+  },
   moreHandle(e) {
     console.log(e)
     common.report(e.target.dataset);
@@ -130,13 +134,9 @@ Page({
    */
   tapInputHandle(e) {},
   focusHandle(e) {
-    this.setData({
-      inputFocus: true
-    });
+    
   },
   blurHandle(e) {
-    this.setData({
-      inputFocus: false
-    });
+    
   }
 })

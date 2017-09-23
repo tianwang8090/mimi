@@ -1,7 +1,7 @@
 <import src="../../components/input-box/input-box.wxml" />
 
 <view class='input-wrapper' wx:if="{{showInput}}" bind:tap="inputCancelHandle">
-  <template is="input_model" data="{{autofocus:autoFocus,placeholder:userInfo.nick}}"></template>
+  <template is="input_model" data="{{focus:focus,placeholder:userInfo.nick}}"></template>
 </view>
 
 <view>

@@ -5,7 +5,7 @@ Page({
   data: {
     userInfo: null,
     showInput: false,
-    autoFocus: true
+    focus: true
   },
   onLoad: function(options) {
     //Do some initialize when page load.
