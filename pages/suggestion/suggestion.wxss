@@ -1,0 +1,45 @@
+page {
+  background-color: #444;
+}
+
+.textarea-box {
+  padding: 10rpx;
+}
+
+.textarea {
+  padding: 20rpx;
+  width: 100%;
+  height: 500rpx;
+  box-sizing: border-box;
+  border: 2rpx solid #333;
+  border-radius: 10rpx;
+  color: #fff;
+}
+
+.send-box {
+  position: absolute;
+  bottom: 60rpx;
+  width: 100%;
+  text-align: center;
+}
+
+.send-btn {
+  display: inline-block;
+  width: 100rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  border-radius: 50%;
+  box-shadow: 0 0 20rpx #333;
+  text-align: center;
+  background-color: #333;
+}
+
+.send-btn i.icon-plane {
+  font-size: 60rpx;
+  color: #aaa;
+}
+
+.send-btn .icon-plane.active {
+  color: lightseagreen;
+  text-shadow: 0 0 10rpx lightseagreen;
+}

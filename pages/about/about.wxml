@@ -1,0 +1,19 @@
+<view>
+  <view class="wrapper">
+    <view class="title">
+      致 xx
+    </view>
+    <view class="paragraph">
+      MiMi，在我们看来就是一个交流的地方。
+    </view>
+    <view class="paragraph">
+      在【记录】里记下任何东西：想法、心情、灵感、句子、台词、段落、书信、日记、段子、吐槽……一切你愿意记下来的东西，这是和自己交流，和以前的、现在的、未来的自己交流。
+    </view>
+    <view class="paragraph">
+      你也可以看看【首页】里面别人的分享，看看别人的生活，听听别人的想法；我们也鼓励你将自己的记录分享出去，与人交流，或许这能给正处于某种境地的陌生人一些帮助，我们希望MiMi可以成为你的一个树洞、一个邮筒、一个……
+    </view>
+    <view class="paragraph">
+      MiMi才刚刚出生不久，很多地方可能还不够完善，如果你有什么想法，我们殷切地希望你给我们建议，一起让MiMi变得更加的美好！
+    </view>
+  </view>
+</view>

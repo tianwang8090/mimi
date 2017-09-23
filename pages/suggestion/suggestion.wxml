@@ -1,4 +1,4 @@
-<template name="textarea_model">
+<view>
 
   <view class="textarea-box">
     <textarea class="textarea" value="{{value}}" maxlength="{{maxlength || -1}}" auto-focus="{{autofocus || true}}" focus="{{focus || true}}"
@@ -6,4 +6,10 @@
       bindconfirm="textareaConfirmHandle" placeholder="{{placeholder || ''}}" />
   </view>
 
-</template>
+  <view class="send-box">
+    <view class="send-btn" bind:tap="sendTapHandle">
+      <i class="iconfont icon-plane {{ canSend ? 'active' : ''}}"></i>
+    </view>
+  </view>
+
+</view>

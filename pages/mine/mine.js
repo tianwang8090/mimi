@@ -69,5 +69,17 @@ Page({
         this.setData(obj);
       }
     })
+  },
+  // 建议
+  suggestTapHandle(e) {
+    wx.navigateTo({
+      url: '../suggestion/suggestion'
+    })
+  },
+  // 关于我们
+  aboutTapHandle(e) {
+    wx.navigateTo({
+      url: '../about/about'
+    })
   }
 })

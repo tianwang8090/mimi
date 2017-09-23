@@ -5,10 +5,13 @@
     "pages/note/note",
     "pages/mine/mine",
     "pages/content/content",
-    "pages/write/write"
+    "pages/write/write",
+    "pages/about/about",
+    "pages/suggestion/suggestion"
   ],
   "window": {
     "backgroundTextStyle": "dark",
+    "backgroundColor": "#222",
     "navigationBarBackgroundColor": "#333",
     "navigationBarTitleText": "MiMi",
     "navigationBarTextStyle": "light",

@@ -25,11 +25,11 @@
   </view>
 
   <view class="list-box weui-cells weui-cells_after-title">
-    <view class="list-item weui-cell weui-cell_access" hover-class="weui-cell_active">
+    <view class="list-item weui-cell weui-cell_access" hover-class="weui-cell_active" bind:tap="suggestTapHandle">
       <view class="weui-cell__bd">给我们提建议</view>
       <view class="weui-cell__ft weui-cell__ft_in-access"></view>
     </view>
-    <view class="list-item weui-cell weui-cell_access" hover-class="weui-cell_active">
+    <view class="list-item weui-cell weui-cell_access" hover-class="weui-cell_active" bind:tap="aboutTapHandle">
       <view class="weui-cell__bd">关于我们</view>
       <view class="weui-cell__ft weui-cell__ft_in-access"></view>
     </view>

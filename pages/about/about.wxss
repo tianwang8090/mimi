@@ -1,0 +1,22 @@
+page {
+  background-color: #444;
+}
+.wrapper {
+  padding: 200rpx 40rpx 100rpx;
+  color: #eee;   
+}
+
+.title {
+  margin-bottom: 60rpx;
+  font-size: 32rpx;
+  text-align: center;
+  font-weight: bold;
+}
+
+.paragraph {
+  margin-bottom:40rpx;
+  font-size:32rpx;
+  line-height:64rpx;
+  text-align:justify;
+  text-indent:2em;
+}
