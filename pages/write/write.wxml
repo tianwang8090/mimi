@@ -6,7 +6,7 @@
     <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="dateChangeHandle">
       <view class="date">2017-09-09</view>
     </picker>
-    <picker bindchange="weatherChangeHandle" value="{{index}}" range="{{array}}">
+    <picker bindchange="weatherChangeHandle" value="{{index}}" range="{{weatherArray}}">
       <view class="weather">晴</view>
     </picker>
   </view>
@@ -25,9 +25,9 @@
   </view>
 
   <view class="tool-wrapper">
-    <view class="tool-box">
-      <i class="iconfont icon-plane {{share ? 'shared' : ''}}"></i>
-      <i class="iconfont icon-check"></i>
+    <view class="tool-box clearfix">
+      <i class="iconfont icon-plane {{share ? 'shared' : ''}}" bind:tap="shareHandle"></i>
+      <i class="iconfont icon-check pull-right" bind:tap="doneHandle"></i>
     </view>
   </view>
 

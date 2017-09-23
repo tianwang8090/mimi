@@ -79,6 +79,7 @@
 /* like end */
 
 .footer-box {
+  margin-bottom: 200rpx;
   height: 80rpx;
   line-height: 80rpx;
   color: #999;

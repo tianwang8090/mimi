@@ -93,6 +93,10 @@ Page({
     //Do some when page pull down.
 
   },
+  /**
+   * 点赞
+   * @param {*} e 
+   */
   likeHandle(e) {
     let params = {};
     let s1 = `content_info.like`;
@@ -101,17 +105,29 @@ Page({
     params[s2] = this.data.content_info.like ? --this.data.content_info.like_count : ++this.data.content_info.like_count;
     this.setData(params);
   },
-  commentHandle(e) { },
+  /**
+   * 点击评论回复
+   * @param {*} e 
+   */
+  commentTapHandle(e) { },
   moreHandle(e) {
     console.log(e)
     common.report(e.target.dataset);
   },
+  /**
+   * tab标签栏点击切换
+   * @param {*} e
+   */
   tabHandle(e) {
     let name = e.currentTarget.dataset.name;
     this.setData({
       activeTab: name
     });
   },
+  /**
+   * 点击输入框
+   * @param {*} e 
+   */
   tapInputHandle(e) {},
   focusHandle(e) {
     this.setData({

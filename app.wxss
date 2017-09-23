@@ -3,3 +3,23 @@
 page {
   height: 100%;
 }
+
+.clearfix {
+  zoom: 1;
+}
+.clearfix::after {
+  content: ".";
+  display: block;
+  height: 0;
+  width: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.pull-left {
+  float: left;
+}
+.pull-right {
+  float: right;
+}

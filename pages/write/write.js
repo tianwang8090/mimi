@@ -6,11 +6,13 @@ Page({
   data: {
     content: "",
     contentImgSrc: "",
+    share: true,
     textareaOptions: {
       autofocus: true,
       focus: true,
       placeholder: "写下你的MiMi..."
-    }
+    },
+    weatherArray: ["晴天","阴","小雨","大雨","微风","雪","雾","霾","龙卷风","沙尘暴"]
   },
 
   /**
@@ -83,10 +85,10 @@ Page({
   chooseImgHandle(e) {
     let _this = this;
     wx.chooseImage({
-      count: 1,	// 默认为9
-      sizeType: ['original', 'compressed'],	// 指定原图或者压缩图
-      sourceType: ['album', 'camera'],	// 指定图片来源
-      success: function(res) {
+      count: 1, // 默认为9
+      sizeType: ['original', 'compressed'], // 指定原图或者压缩图
+      sourceType: ['album', 'camera'], // 指定图片来源
+      success: function (res) {
         var tempFilePaths = res.tempFilePaths;
         _this.setData({
           contentImgSrc: tempFilePaths[0]
@@ -102,6 +104,16 @@ Page({
    * 天气改变
    */
   weatherChangeHandle(e) {
-    
+
+  },
+  /**
+   * 点击分享
+   */
+  shareHandle(e) {},
+  /**
+   * 编辑完成
+   */
+  doneHandle(e) {
+    wx.navigateBack();
   }
 })

@@ -1,7 +1,7 @@
 <import src="../../components/content-box/content-box.wxml"></import>
 <import src="../../components/comment-box/comment-box.wxml"></import>
 <import src="../../components/like-box/like-box.wxml"></import>
-<import src="../../components/input-box/input-box/input-box.wxml"></import>
+<import src="../../components/input-box/input-box.wxml"></import>
 
 <view>
   <view class="content-wrapper">
@@ -15,7 +15,7 @@
     <view class="panel-box">
         <block wx:if="{{activeTab === 'comment'}}">
             <view class="comment-list-box">
-                <view class="comment-wrapper" wx:for="{{comment_list}}" wx:key="{{item.comment_id}}">
+                <view class="comment-wrapper" bind:tap="commentTapHandle" wx:for="{{comment_list}}" wx:key="{{item.comment_id}}">
                     <template is="comment_model" data="{{index,...item}}"></template>
                   </view>
             </view>
