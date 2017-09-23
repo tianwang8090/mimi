@@ -25,5 +25,11 @@ Page({
   onPullDownRefresh: function() {
     //Do some when page pull down.
     
+  },
+  /**
+   * 用户点击右上角分享
+   */
+  onShareAppMessage: function () {
+    
   }
 })

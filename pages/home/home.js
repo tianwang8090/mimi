@@ -62,6 +62,12 @@ Page({
     // 下拉刷新
     console.log("ddd");
   },
+  /**
+   * 用户点击右上角分享
+   */
+  onShareAppMessage: function () {
+    
+  },
   onReachBottom() {
     // 上拉加载
     wx.request({

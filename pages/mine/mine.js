@@ -33,6 +33,12 @@ Page({
     //Do some when page pull down.
     
   },
+  /**
+   * 用户点击右上角分享
+   */
+  onShareAppMessage: function () {
+    
+  },
   nickHandle(e) {
     this.setData({
       showInput: true

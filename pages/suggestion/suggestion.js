@@ -28,6 +28,12 @@ Page({
     //Do some when page pull down.
 
   },
+  /**
+   * 用户点击右上角分享
+   */
+  onShareAppMessage: function () {
+    
+  },
   // 输入建议时设置发送按钮状态
   textareaInputHandle(e) {
     this.setData({
